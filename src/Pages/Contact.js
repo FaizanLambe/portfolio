@@ -121,9 +121,6 @@ const ContactMain = styled.section`
         }
         .form{
             width: 100%;
-            @media screen and (max-width:500px){
-                width: 90%;
-            }
             .form-field{
                 margin-top: 2rem;
                 position: relative;

@@ -26,7 +26,7 @@ const Portfolio = [
         image: rps,
         link1: "https://faizanlambe.github.io/rock-paper-scissors/",
         title: 'Real Estate Management System',
-        text: 'Rock Paper Scissors game'
+        text: 'Rock Paper Scissors game with Javascript'
     }
 ]
 

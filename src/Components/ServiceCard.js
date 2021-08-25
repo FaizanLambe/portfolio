@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function ServiceCard({image, title, para}) {
+function ServiceCard({ image, title, para }) {
     return (
         <ServiceCardMain>
             <div className="container">
-                <img src={image} alt=""/>
+                <img src={image} alt="" />
                 <h4>{title}</h4>
                 <p>{para}</p>
             </div>
@@ -48,12 +48,23 @@ const ServiceCardMain = styled.div`
         img{
             width: 100px;
             @media screen and (max-width: 640px){
-                width: 80px;
+                width: 70px;
             }
         }
         @media screen and (max-width: 640px){
-            width: 340px;
+            width: 300px;
+            h4{
+                font-size: 1.4rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+            
         }
+        
+    }
+    @media screen and (max-width: 640px){
+        margin-left: 10px;
     }
 `
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
-function ContactItem({icon, title, contact}) {
+function ContactItem({ icon, title, contact }) {
     return (
         <ContactItemMain>
             <div className="left-content">
@@ -40,6 +40,9 @@ const ContactItemMain = styled.div`
                 font-size: 1.5rem;
             }
         }
+        @media screen and (max-width:640px){
+            padding: 1.5rem;
+        }
     }
     .right-content{
         h6{
@@ -49,10 +52,13 @@ const ContactItemMain = styled.div`
         }
         p{
             padding: .1rem 0;
+            @media screen and (max-width:640px){
+                font-size: 0.8rem;
+            }
         }
     }
     @media screen and (max-width:640px){
-        width: 80%;
+        width: 100%;
     }
 `
 

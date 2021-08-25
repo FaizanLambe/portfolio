@@ -35,6 +35,7 @@ const ButtonMain = styled.a`
     }
     @media screen and (max-width:640px){
             font-size: 18px;
+            padding: .8rem 1rem;
     }
     
 `

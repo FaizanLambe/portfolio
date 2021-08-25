@@ -29,8 +29,9 @@ function Services() {
 }
 
 const ServicesMain = styled.section`
+
     .services{
-        margin-top: 5rem;
+        margin-top: 2rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         flex-direction: row;
@@ -38,7 +39,8 @@ const ServicesMain = styled.section`
         width: 50%;
         @media screen and (max-width: 1300px){
             grid-template-columns: repeat(1, 1fr);
-            flex-direction: column;
+            grid-gap: 0;
+            margin-top: 10px;
         }
     }
     

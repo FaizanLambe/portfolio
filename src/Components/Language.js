@@ -25,11 +25,6 @@ function Language() {
                         width= {'70%'}
                         text= {'70%'}
                     />
-                    <ProgressBar 
-                        title={'Marathi'}
-                        width= {'30%'}
-                        text= {'30%'}
-                    />
                     </div>
                 </InnerLayout>
         </LanguageMain>

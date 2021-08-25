@@ -7,8 +7,7 @@ import styled from 'styled-components'
 function HomePage() {
     return (
         <HomePageMain>
-            <Particles params={ParticlesConfig}>
-            </Particles>
+            <Particles params={ParticlesConfig} />
             <Typography>
                 <h1>Hi, I'm <span>Faizan Lambe</span></h1>
                 <p>My aim is to work in an organization which will enhance my skills and enable me to become successful and scale new heights in life in conjunction with the growth of the organization.</p>
@@ -16,12 +15,12 @@ function HomePage() {
                     <FacebookIcon href="https://www.facebook.com/">
                         <Facebook />
                     </FacebookIcon>
-                    <LinkedInIcon>
-                        <LinkedIn />
-                    </LinkedInIcon>
-                    <GitHubIcon>
+                    <GitHubIcon href="https://github.com/FaizanLambe">
                         <GitHub />
                     </GitHubIcon>
+                    <LinkedInIcon href="https://www.linkedin.com/in/faizan-lambe/">
+                        <LinkedIn />
+                    </LinkedInIcon>
                 </SocialIcons>
             </Typography>
         </HomePageMain>
@@ -100,8 +99,6 @@ const LinkedInIcon = styled.a`
     &:hover{
         border: 2px solid var(--primary-color);
         color: var(--primary-color);
-        border: 2px solid red;
-        color: red;
     }
     &:not(:last-child){
         margin-right: 1rem;

@@ -74,21 +74,29 @@ const GlobalStyled = createGlobalStyle`
     //Floating toggle
     .light-dark-mode{
     position: fixed;
-    right:0;
+    right:-4px;
     top: 50%;
     background-color: var(--background-light-color-2);
-    width: 6.5rem;
-    height: 2.5rem;
+    width: 4.6rem;
+    height: 2rem;
+    border-radius: 5px;
     z-index:15;
     display: flex;
     align-items: center;
-    justify-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    @media screen and (max-width:640px){
+        top: 20%;
+        width: 4.5rem;
+        height: 2rem;
+        }
     svg{
       display: flex;
       align-items: center;
-      font-size: 1.7rem;
+      font-size: 1.2rem;
       color: var(--white-color);
+      @media screen and (max-width:640px){
+            font-size: 1.2rem;
+        }
     }
   }
 
@@ -114,7 +122,6 @@ const GlobalStyled = createGlobalStyle`
           display: block;
       }
   }
-  
   
 `
 
