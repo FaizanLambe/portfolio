@@ -68,23 +68,29 @@ function Contact() {
                         </form>
                     </div>
                     <div className="right-content">
-                        <ContactItem
-                            icon={<PhoneIcon />}
-                            title={"Phone"}
-                            contact={'+91 7715-050-153'}
-                        />
+                        <a href="tel:+917715050153">
+                            <ContactItem
+                                icon={<PhoneIcon />}
+                                title={"Phone"}
+                                contact={'+91 7715-050-153'}
+                            />
+                        </a>
 
-                        <ContactItem
-                            icon={<EmailIcon />}
-                            title={"Email"}
-                            contact={'faizaanlambe1998@gmail.com'}
-                        />
+                        <a href="mailto: faizaanlambe@gmail.com">
+                            <ContactItem
+                                icon={<EmailIcon />}
+                                title={"Email"}
+                                contact={'faizaanlambe1998@gmail.com'}
+                            />
+                        </a>
 
-                        <ContactItem
-                            icon={<LocationOnIcon />}
-                            title={"Location"}
-                            contact={'Malad (East), Mumbai - 400097, India'}
-                        />
+                        <a href="https://bit.ly/38jz8EB">
+                            <ContactItem
+                                icon={<LocationOnIcon />}
+                                title={"Location"}
+                                contact={'Malad (East), Mumbai - 400097, India'}
+                            />
+                        </a>
                     </div>
                 </InnerLayout>
             </ContactMain>

@@ -2,12 +2,24 @@ import React from 'react'
 import styled from 'styled-components';
 
 function ProgressBar({title, width, text}) {
+
+    const [style, setStyle] = React.useState({});
+
+    setTimeout(() =>{
+        const newStyle = {
+            opacity : 1,
+            width: width
+        }
+
+        setStyle(newStyle);
+    }, 200);
+
     return (
         <ProgressBarMain>
             <h6>{title}</h6>
             <div className="progress-bar">
                 <div className="progress">
-                    <span style={{width: width}}></span>
+                    <span style={style}></span>
                 </div>
                 <p>{text}</p>
             </div>
@@ -32,7 +44,10 @@ const ProgressBarMain = styled.div`
                 left: 0;
                 bottom: 0;
                 height: 100%;
+                width: 0;
+                opacity: 0;
                 background-color: var(--primary-color);
+                transition: 1s ease 0.3s;
             }
         }
     }
