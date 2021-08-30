@@ -18,7 +18,33 @@ function Image() {
                     I want to work in an organization which will enhance my skills and enable me to become successful and scale new heights in life in conjunction with the growth of the organization.
                 </p>
                 <div className="about-info">
-                    <div className="info-title">
+                    <table className="check">
+                        <tr>
+                            <td>Full Name:</td>
+                            <td className="info">Mohammed Faizan A Lambe</td>
+                        </tr>
+                        <tr>
+                            <td>D.O.B:</td>
+                            <td className="info">03 / 03 / 1998</td>
+                        </tr>
+                        <tr>
+                            <td>Nationality:</td>
+                            <td className="info">Indian</td>
+                        </tr>
+                        <tr>
+                            <td>Languages:</td>
+                            <td className="info">English, Hindi, Urdu</td>
+                        </tr>
+                        <tr>
+                            <td>Location:</td>
+                            <td className="info">Malad(East), Mumbai</td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td className="info">Information Technology</td>
+                        </tr>
+                    </table>
+                    {/*<div className="info-title">
                         <p>Full Name:</p>
                         <p>D.O.B:</p>
                         <p>Nationality:</p>
@@ -33,7 +59,7 @@ function Image() {
                         <p>English, Hindi, Urdu</p>
                         <p>Malad(East), Mumbai</p>
                         <p>Information Technology</p>
-                    </div>
+    </div>*/}
                 </div>
 
                 <a href={Resume} download="Faizan's Resume">
@@ -79,6 +105,9 @@ const ImageMain = styled.div`
         .about-info{
             padding-bottom: 1.4rem;
             display: flex;
+            .check{
+                font-size: 12px;
+            }
             .info-title{
                 padding-right: 3rem;
                 p{
@@ -89,6 +118,10 @@ const ImageMain = styled.div`
                 p{
                     padding: .3rem 0;
                 }
+            }
+            .info{
+                    padding-top: 8px;
+                    padding-left: 15px;
             }
         }
     }

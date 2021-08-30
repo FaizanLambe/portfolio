@@ -43,6 +43,9 @@ const ContactItemMain = styled.div`
         @media screen and (max-width:640px){
             padding: 1.5rem;
         }
+        @media screen and (max-width:400px){
+            padding: 1rem;
+        }
     }
     .right-content{
         h6{
@@ -59,6 +62,9 @@ const ContactItemMain = styled.div`
     }
     @media screen and (max-width:640px){
         width: 100%;
+    }
+    @media screen and (max-width:400px){
+        width: 95%;
     }
 `
 

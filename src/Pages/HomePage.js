@@ -10,7 +10,7 @@ function HomePage() {
             <Particles params={ParticlesConfig} />
             <Typography>
                 <h1>Hi, I'm <span>Faizan Lambe</span></h1>
-                <p>My aim is to work in an organization which will enhance my skills and enable me to become successful and scale new heights in life in conjunction with the growth of the organization.</p>
+                <p>Ambitious developer brings a problem-solving approach and powerful technology skills to the web development process. Always ready to learn attitude.</p>
                 <SocialIcons>
                     <FacebookIcon href="https://www.facebook.com/">
                         <Facebook />
@@ -47,11 +47,11 @@ const Typography = styled.div`
             font-size: 2.2rem;
             color: var(--primary-color);
             @media screen and (max-width:640px){
-            font-size: 1.3rem;
+            font-size: 1.5rem;
         }
         }
         @media screen and (max-width:640px){
-            font-size: 1.3rem;
+            font-size: 1.5rem;
         }
     }
     p{

@@ -41,7 +41,7 @@ function Contact() {
             <Title title={'Contact'} span={'Contact'} />
             <ContactMain>
                 <InnerLayout className='contact-section'>
-                    <div className="left-content">
+                    <div className="left-contents">
                         <div className="contact-title">
                             <h4>Get In Touch</h4>
                         </div>
@@ -111,11 +111,23 @@ const ContactMain = styled.section`
             }
         }
 
+        .left-contents{
+            @media screen and (max-width:640px){
+                width: 90%;
+            }
+        }
+
         .right-content{
             display: grid;
             grid-template-columns: repeat(1, 1f);
             @media screen and (max-width:640px){
-                width: 70%;
+                width: 90%;
+            }
+            a{
+                margin-top: 15px;
+                @media screen and (max-width:400px){
+                    width: 100%;
+                }
             }
         }
         .contact-title{
@@ -151,6 +163,9 @@ const ContactMain = styled.section`
                     @media screen and (max-width:640px){
                         width: 90%;
                     }
+                    @media screen and (max-width:400px){
+                        width: 100%;
+                    }
                 }
                 textarea{
                     background: transparent;
@@ -161,6 +176,9 @@ const ContactMain = styled.section`
                     padding: .8rem 1rem;
                     @media screen and (max-width:640px){
                         width: 90%;
+                    }
+                    @media screen and (max-width:400px){
+                        width: 100%;
                     }
                 }
             }
