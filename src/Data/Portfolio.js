@@ -25,8 +25,8 @@ const Portfolio = [
         category: 'HTML, CSS, JavaScript',
         image: rps,
         link1: "https://faizanlambe.github.io/rock-paper-scissors/",
-        title: 'Real Estate Management System',
-        text: 'Rock Paper Scissors game with Javascript'
+        title: 'Rock Paper Scissors game',
+        text: 'Create this web based game with HTML, CSS and Javascript'
     }
 ]
 

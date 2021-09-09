@@ -1,17 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import profile from '../Image/profile.jpg'
 
 function Navigation() {
+
+    const closeMenu = () => {
+        document.querySelector(".sidebar").classList.remove("open");
+    }
+
     return (
-        <NavigationMain>
+        <NavigationMain className="navigationMain">
             <ProfileImage>
                 <img src={profile} alt="" />
             </ProfileImage>
             <NavItems>
                 <li className="nav-item">
-                    <NavLink to="/" activeClassName="active-class" exact>Home</NavLink>
+                    <NavLink to="/" activeClassName="active-class" exact onClick={closeMenu}>Home</NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
@@ -30,7 +35,7 @@ function Navigation() {
                 <p>@2021 Faizan's Porfolio Website</p>
             </footer>
         </NavigationMain>
-    )
+    );
 }
 
 const NavigationMain = styled.nav`
